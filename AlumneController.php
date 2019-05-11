@@ -23,7 +23,7 @@
 	
 	function deleteAlumne($id)
 	{
-		modDelete($id);
+		return modDelete($id);
 	}
 	
 	
