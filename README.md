@@ -1,4 +1,4 @@
-# mvc_pdo
+# mvc_pdo I
 Aproximació a l'arquitectura **MVC amb PDO**.
 
 Repositori pensat per alumnes del **Mòdul 7: Desenvolupament en entorn servidor** del CFGS de DAW, concretament per la **UF3: Tècniques d'accés a dades**.
