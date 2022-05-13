@@ -14,6 +14,17 @@
 				<h1>Aproximació a MVC</h1>
 				<h3>CRUD amb PDO</h3>
 			</div>
+			<?php
+				if (isset($missatge["Success"])) {
+					echo "<div class='alert alert-success' role='alert'>
+					  ". $missatge["Success"] ."
+					</div>";
+				} else if (isset($missatge["Error"])) {
+					echo "<div class='alert alert-danger' role='alert'>
+					  ". $missatge["Error"] ."
+					</div>";
+				}
+			?>
 			<div class="table-responsive-sm">
 				<table class="table table-striped">
 					<thead class="thead-dark">

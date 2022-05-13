@@ -23,15 +23,16 @@
 	
 	function deleteAlumne($id)
 	{
-		return modDelete($id);
+		modDelete($id);
 	}
 	
 	
 	/**** FUNCIONS PER CARREGAR LES VISTES ***/
 	
-	function loadMainView()
+	function loadMainView($msg=null)
 	{
 		$result = getAlumnes();
+		$missatge = $msg;
 		require_once("MainView.php");
 	}
 	

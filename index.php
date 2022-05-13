@@ -44,10 +44,14 @@
 	{
 		if ($_POST['action'] == 'add')
 		{
+			// Exemple de com utilitzar els missatges que el model ens retorna.
+			// Aquests els desem a la variable $msg i els enviem a la vista principal
+			$msg = null;
+			
 			if (isset($_POST['nom']) && isset($_POST['cognoms']) && isset($_POST['data_naixement'])) {
-				addAlumne($_POST['nom'], $_POST['cognoms'], $_POST['data_naixement']);
+				$msg = addAlumne($_POST['nom'], $_POST['cognoms'], $_POST['data_naixement']);
 			}
-			loadMainView();
+			loadMainView($msg);
 		}
 		else if ($_POST['action'] == 'up')
 		{
